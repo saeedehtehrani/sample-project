@@ -1,0 +1,21 @@
+<div class="grid">
+    <div class="col-12 text-center">
+        <p-button icon="pi pi-plus" class="pr-2"></p-button>
+        <input type="text" pInputText placeholder="Search..." (input)="onSearchChange($event)" />
+    </div>
+    <div class="col-3" *ngFor="let alarm of alarms">
+        <p-card>
+            <p class="white-space-nowrap overflow-hidden text-overflow-ellipsis">{{alarm.name}}</p>
+            <p class="white-space-nowrap overflow-hidden text-overflow-ellipsis">{{alarm.desc}}</p>
+
+            <div class="flex">
+                <div class="flex-grow-1">
+                    <div>alarms: {{alarm.alarms}}</div>
+                </div>
+                <div class="alarmNotif" *ngIf="alarm.alarms > 0">
+                    <i class="pi pi-circle-fill"></i>
+                </div>
+            </div>
+        </p-card>
+    </div>
+</div>

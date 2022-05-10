@@ -1,0 +1,13 @@
+<div class="mainContent">
+    <div class="grid content">
+        <div class="col-fixed">
+            <p-menubar class="mainMenu" [model]="items">
+                <p-avatar label="{{userFirstLetter}}" styleClass="mr-2" size="large" [style]="{'background-color':'#2196F3', 'color': '#ffffff'}" shape="circle"></p-avatar>
+            </p-menubar>
+        </div>
+        <div class="col">
+            <router-outlet>
+            </router-outlet>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+@import '~sass-reset'
+
+html,body
+    height: 100%
+
+body
+.mainContent
+    padding-right: 0.5rem
+    padding-left: 0.5rem
+    height: 100%
+
+    .grid.content
+        height: 100%
+        margin-top: 0
+
+        .col-fixed
+            width:70px
+            padding: 0
+        .p-menubar
+            height: 100%
+            border-radius: 0
+            display: flex
+            flex-direction: column
+            flex-grow: 1
+
+            p-menubarsub
+                display: flex
+                flex-grow: 1
+    .mainMenu
+        height: 100%
+
+        ul
+            display: flex
+            flex-direction: column
+            align-self: center
+.p-card 
+    .p-card-content
+        padding: 0  
+    .alarmNotif
+        color: var(--red-700)
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link.p-menuitem-link-active,
+:focus
+    box-shadow: none 
+
+    .p-menuitem-icon
+        color: var(--yellow-500)
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link:focus
+    box-shadow: none
